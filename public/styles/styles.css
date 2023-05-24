@@ -1,0 +1,241 @@
+*{  
+    margin: 0%;
+}
+html, body{
+    font-size: 16px;
+    background-color: #ffff;
+    position: relative;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*Estilos de barra de navegacion*/
+.nav-container{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 400;
+    background: transparent;
+}
+.nav-list-container{
+    width: 50%;
+    height: 10vh;
+    padding: auto;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.nav-section{
+    color: #ffff;
+    text-decoration: none;
+}
+/*Presentacion*/
+.presentation-container{
+    height: 95vh;
+    background: rgb(3,140,140);
+    background: linear-gradient(346deg, rgba(3,140,140,1) 0%, rgba(1,52,64,1) 100%);
+}
+.elements-container{
+    display: flex;
+    flex-direction: column;
+    color: #ffff;
+    padding: 25vh 50px 0 50px;
+}
+.title-container{
+    height: 25vh;
+    font-weight: 700;
+    font-size: 50px;
+}
+.description-container{
+    padding: 30px 50vw 0 0;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/*Tecnologias que manejo*/
+.about{
+    margin: 10px auto 30px 100px;
+    font-size: 40px;
+}
+
+.tech-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 50px;
+
+}
+.description-tech-container{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-card-container{
+    width: 350px;
+    height: 0px;
+    padding-bottom: 50%; /* Establece la relación de aspecto cuadrada */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+.card-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.card-description-container{
+    margin: 10px 25px;
+}
+/*Projects*/
+.secion-proyects{
+    display: flex;
+    justify-content: center;
+}
+.projects-container{
+    margin: 0;
+    padding: 0;
+    width: 90vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.img-container-proyecto{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.img-proyectos{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.button-link-proyecto{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+.img-container-proyecto:hover .img-proyectos{
+    opacity: 0.3;
+}
+.img-container-proyecto:hover .button-link-proyecto{
+    opacity: 1;
+}
+.button-link-proyecto{
+    height: 35px;
+    width: auto;
+    background-color: #014034;
+    color: #ffff;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    transition: 0s 100ms;
+}
+.button-link-proyecto:active{
+    background-color: #038c8c;
+    transition: 100ms;
+}
+.link-project{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*Contact*/
+.contact{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: -90px;
+}
+.contact-container{
+    display: flex;
+    min-width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 35px;
+    background-color: #0D0D0D;
+    color: #fff;
+    border-radius: 10px;
+}
+.section-contact{
+    display: flex;
+    justify-content: center;
+    flex-basis: 0;
+    flex-grow:1;
+}
+.f-s-contact{
+    font-size: 25px;
+    font-weight: 700;
+}
+.s-s-contact{
+    font-size: 18px;
+}
+.t-s-contact{
+    font-family: 'Pathway Gothic One', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+
+}
+.btn-s-contact{
+    padding: 10px 25px;
+    width: auto;
+    border-radius: 20px;  
+    border-style: solid;  
+    background-color: transparent;
+    border-color: #36BFB1;
+    
+}
+.btn-s-contact:hover{
+    color: #0D0D0D;
+    background-color: #36BFB1;
+    font-weight: 700;
+}
+/**/
+.footer-container{
+    height: 200px;
+    background: rgb(3,140,140);
+    background: linear-gradient(346deg, rgba(3,140,140,1) 0%, rgba(1,52,64,1) 100%);
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+.footer-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40vw;
+}
+.text-footer{
+    font-size: 25px;
+    text-align: center;
+    color: #ffff;
+    font-weight: 700;
+}
+.social-section{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 50px;
+    padding: 25px;
+}
+.icon-social{
+    text-decoration: none;
+    color: #0D0D0D;
+}
