@@ -12,9 +12,6 @@ html, body{
 /*Estilos de barra de navegacion*/
 .nav-container{
     position: absolute;
-    margin: 0;
-    padding: 0;
-    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -23,9 +20,8 @@ html, body{
     background: transparent;
 }
 .nav-list-container{
-    width: 50%;
+    width: 60%;
     height: 10vh;
-    padding: auto;
     list-style: none;
     display: flex;
     align-items: center;
@@ -36,27 +32,38 @@ html, body{
     color: #ffff;
     text-decoration: none;
 }
+.nav-section:hover{
+    color:#0D0D0D;
+    transition-duration: 250ms;
+}
 /*Presentacion*/
 .presentation-container{
-    height: 95vh;
+    max-height: 100vh;
     background: rgb(3,140,140);
     background: linear-gradient(346deg, rgba(3,140,140,1) 0%, rgba(1,52,64,1) 100%);
+    display: flex;
+}
+.img-container-presentation{
+    width: 40vw;
 }
 .elements-container{
     display: flex;
     flex-direction: column;
     color: #ffff;
-    padding: 25vh 50px 0 50px;
+    margin: 15% 0 0 40px;
+    width: 60vw;
+    height: 85vh;
 }
 .title-container{
-    height: 25vh;
+    width: auto;
     font-weight: 700;
     font-size: 50px;
 }
 .description-container{
-    padding: 30px 50vw 0 0;
+    margin: 30px 10px 0 0;
     font-weight: 400;
     font-size: 20px;
+    text-align: justify;
 }
 
 /*Tecnologias que manejo*/
@@ -72,13 +79,13 @@ html, body{
 
 }
 .description-tech-container{
-    width: 400px;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .img-card-container{
-    width: 350px;
+    width: 100%;
     height: 0px;
     padding-bottom: 50%; /* Establece la relación de aspecto cuadrada */
     position: relative;
@@ -88,13 +95,15 @@ html, body{
 .card-img{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 110%;
     object-fit: cover;
     object-position: center;
 }
 .card-description-container{
-    margin: 10px 25px;
+    margin: 0;
 }
+
+
 /*Projects*/
 .secion-proyects{
     display: flex;
@@ -164,7 +173,7 @@ html, body{
 }
 .contact-container{
     display: flex;
-    min-width: 80%;
+    max-width: 80%;
     justify-content: space-evenly;
     align-items: center;
     padding: 35px;
@@ -184,6 +193,7 @@ html, body{
 }
 .s-s-contact{
     font-size: 18px;
+    text-align: center;
 }
 .t-s-contact{
     font-family: 'Pathway Gothic One', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -206,9 +216,9 @@ html, body{
     background-color: #36BFB1;
     font-weight: 700;
 }
-/**/
+/*Footer*/
 .footer-container{
-    height: 200px;
+    height: 250px;
     background: rgb(3,140,140);
     background: linear-gradient(346deg, rgba(3,140,140,1) 0%, rgba(1,52,64,1) 100%);
     padding-top: 150px;
@@ -232,10 +242,181 @@ html, body{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    margin: 50px;
-    padding: 25px;
+    padding: 50px;
 }
 .icon-social{
     text-decoration: none;
     color: #0D0D0D;
+}
+/*Media Querys*/
+@media (max-width: 1023px) {
+    /*nav*/
+    .nav-container{
+        font-size: 18px;
+    }
+    .nav-list-container{
+        width: 70%;
+    }
+    /*Presentacion*/
+    .presentation-container{
+        height: 50vh;
+    }
+    .img-container-presentation{
+        width: 40vw;
+    }
+    .title-container{
+        font-size: 30px;
+    }
+    .description-container{
+        margin-top: 15px;        
+        font-size: 15px;
+    }
+    .elements-container{
+        margin: 15vh 0 0 40px;
+        width: 60vw;
+    }
+    /*Tecnologias que manejo*/
+    .about{
+        margin: 10px auto 20px 50px;
+        font-size: 25px;
+    }
+    .tech-container{
+        margin: 0 20px;/**/
+    }
+    .card-title{
+        font-size: 20px;
+    }
+    .card-description{
+        font-size: 12px;
+    }
+    /*proyectos*/
+    .img-container-proyecto{
+        width: 200px;
+        height: 200px;
+    }
+    /*Contact*/
+    .f-s-contact{
+        font-size: 20px;
+    }
+    .s-s-contact{
+        font-size: 15px;
+    }
+    .t-s-contact{
+        font-size: 15px;
+    }
+    /*Footer*/
+    .text-footer{
+        font-size: 20px;
+    }
+    .footer-container{
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 767px){
+    /*nav*/
+    .nav-container{
+        font-size: 18px;
+    }
+    .nav-list-container{
+        width: 70%;
+    }
+    /*Presentacion*/
+    .presentation-container{
+        flex-direction: column;
+        height: 70vh;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .img-container-presentation{
+        width: 100%;
+        height: 50%;
+    }
+    .title-container{
+        font-size: 20px;
+    }
+    .description-container{
+        padding-top: 15px;        
+        font-size: 12px;
+    }
+    .elements-container{
+        margin: 0;
+        width: 100%;
+        order: 2;
+        height: auto;
+    }
+    /*Tecnologias que manejo*/
+    .about{
+        margin: 10px auto 30px 20%;
+        font-size: 25px;
+    }
+    .tech-container{
+        margin: 0 20px;/**/
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .description-tech-container{
+        width: 70%;
+        margin-bottom: 25px;
+    }
+    .img-card-container{
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+    .card-title{
+        font-size: 18px;
+    }
+    .card-description{
+        font-size: 12px;
+    }
+    /*proyectos*/
+    .projects-container{
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .img-container-proyecto{
+        width: 250px;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    /*Contact*/
+    .contact-container{
+        flex-direction: column;
+        padding: 15px 35px;
+    }
+    .section-contact{
+        margin-bottom: 20px;
+    }
+    .f-s-contact{
+        font-size: 18px;
+    }
+    .s-s-contact{
+        font-size: 15px;
+    }
+    .t-s-contact{
+        font-size: 15px;
+    }
+    /*Footer*/
+    .text-footer{
+        font-size: 15px;
+    }
+    .footer-container{
+        padding-top: 100px;
+    }
+    .social-section{
+        width: 100vw;
+        padding: 50px;
+    }
+}
+
+
+/*soporte para pantallas horizontales*/
+@media (min-height:1000px) {
+    .presentation-container{
+        max-height: 50vh;
+    }
+    
 }
