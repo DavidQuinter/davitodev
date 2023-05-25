@@ -4,30 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Davito.dev</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.css" integrity="sha512-W4KOSUNkQhX7JkalSiTkwAIoqsAvxDdgRc/WAa5U0R2TKTpHnNZuf9AiBk8InN4GCAMwer+O9fe4ThxIQFkOGQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/67f94f44a2.js" crossorigin="anonymous"></script>
     <link rel="preload" href="public/styles/styles.css" as="style">
     <link href="public/styles/styles.css" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <nav class="nav-container">
-        <ul class="nav-list-container">
+        <div class="header-mobile box-header">
+            <div class="logo">
+                <p>DavitoDev</p>
+            </div>
+            <button class="button-toggle" type="button" id="toggle_btn" onclick="menuColapse()">
+                <i id="icon-menu" class="fa-solid fa-bars fa-2xl"></i>
+            </button>
+        </div>
+        
+        <ul class="nav-list-container" id="menu">
             <li class="nav-list-section">
-                <a href="#about_me"  class="nav-section">About Me</a>
+                <a href="#about_me"  class="nav-section" onclick="menuColapse()">About Me</a>
             </li>
             <li class="nav-list-section">
-                <a href="#My_projects" class="nav-section">My Recent Work</a>
+                <a href="#My_projects" class="nav-section" onclick="menuColapse()">My Recent Work</a>
             </li>
             <li class="nav-list-section">
-                <a href="" class="nav-section">Resume</a>
+                <a href="" class="nav-section" onclick="menuColapse()">Resume</a>
             </li>
-            <li class="nav-list-section">
+            <li class="nav-list-section" onclick="menuColapse()">
                 <a href="#contact" class="nav-section">Contact</a>
             </li>
-        </ul>
+        </ul> 
+        
     </nav>
     <main>
        <section class="presentation-container">.
@@ -126,12 +138,25 @@
                     With a comprehensive approach to each project and solid experience, I offer customized solutions and exceptional results.</p>
             </div>
             <div class="social-section">
-                <a href="" class="fa-brands fa-twitter fa-2xl icon-social"></a>
-                <a href="" class="fa-brands fa-whatsapp fa-2xl icon-social"></a>
-                <a href="" class="fa-brands fa-linkedin fa-2xl icon-social"></a>
-                <a href="" class="fa-solid fa-envelope fa-2xl icon-social"></a>
+                <a href="https://twitter.com/DavidChuck01" class="fa-brands fa-twitter fa-2xl icon-social" target="_blank"></a>
+                <a href="https://wa.me/524463172285" class="fa-brands fa-whatsapp fa-2xl icon-social" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/dquintero28/" class="fa-brands fa-linkedin fa-2xl icon-social" target="_blank"></a>
+                <a href="mailto:davidquinterocentro@hotmail.com" class="fa-solid fa-envelope fa-2xl icon-social" target="_blank"></a>
             </div>
         </div>
     </footer>
+    <script>
+        const toggleBtn = document.querySelector('#toggle_btn');
+        const iconMenu = document.querySelector('#icon-menu');
+        const menu = document.querySelector('#menu');
+
+        function menuColapse() {
+            menu.classList.toggle('active');
+            const isopen = menu.classList.contains('active');
+            iconMenu.classList = isopen
+            ? 'fa-solid fa-xmark fa-2xl'
+            : 'fa-solid fa-bars fa-2xl'
+        }
+    </script>
 </body>
 </html>

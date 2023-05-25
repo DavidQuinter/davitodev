@@ -7,10 +7,12 @@ html, body{
     position: relative;
     font-family: 'Pathway Gothic One', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /*Estilos de barra de navegacion*/
 .nav-container{
+    z-index: 990;
     position: absolute;
     width: 100%;
     display: flex;
@@ -18,6 +20,9 @@ html, body{
     font-size: 20px;
     font-weight: 400;
     background: transparent;
+}
+.header-mobile{
+    display: none;
 }
 .nav-list-container{
     width: 60%;
@@ -36,6 +41,13 @@ html, body{
     color:#0D0D0D;
     transition-duration: 250ms;
 }
+.button-toggle{
+    margin-right: 20px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
 /*Presentacion*/
 .presentation-container{
     max-height: 100vh;
@@ -316,11 +328,52 @@ html, body{
 @media (max-width: 767px){
     /*nav*/
     .nav-container{
+        width: 100%;
+        height: auto;
         font-size: 15px;
+        flex-direction: column;
     }
-    .nav-list-container{
-        width: 80vw;
+    .header-mobile{
+        z-index: 999;
     }
+    .nav-list-container{ /*El contenedor en estado base debe llevar los estilos, es el active el que va a desplazar a la posicion cero, haciendo que el contenedor se muestre*/
+        position: fixed;
+        bottom: 0;
+        right: -100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 30vh;
+        height: 100vh;
+        font-size: 20px;
+        transition: 0.5s;
+    }
+    .active{
+        right: 0%;
+        background-color: #0D0D0D;
+        border: none;
+    }
+    .header-mobile{
+        display: block;
+    }
+    .logo{
+        padding-left: 20px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+    }
+    .box-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+    }
+    .nav-section:hover{
+        color:#36BFB1;
+    }
+
+
     /*Presentacion*/
     .presentation-container{
         margin: 0;
