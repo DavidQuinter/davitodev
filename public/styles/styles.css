@@ -51,9 +51,11 @@ html, body{
 /*Presentacion*/
 .presentation-container{
     max-height: 100vh;
-    background: rgb(3,140,140);
+    background-image: url(/public/img/BG.png);
+    background-size:cover ;
+    /*background: rgb(3,140,140);
     background: linear-gradient(346deg, rgba(3,140,140,1) 0%, rgba(1,52,64,1) 100%);
-    display: flex;
+    */display: flex;
 }
 .img-container-presentation{
     width: 40vw;
@@ -328,9 +330,6 @@ html, body{
 @media (max-width: 767px){
     /*nav*/
     .nav-container{
-        width: 100%;
-        height: auto;
-        font-size: 15px;
         flex-direction: column;
     }
     .header-mobile{
@@ -340,11 +339,9 @@ html, body{
         position: fixed;
         bottom: 0;
         right: -100%;
-        padding: 0;
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin-top: 30vh;
         height: 100vh;
         font-size: 20px;
         transition: 0.5s;
@@ -352,7 +349,7 @@ html, body{
     .active{
         right: 0%;
         background-color: #0D0D0D;
-        border: none;
+        justify-content: space-evenly;
     }
     .header-mobile{
         display: block;
@@ -376,10 +373,7 @@ html, body{
 
     /*Presentacion*/
     .presentation-container{
-        margin: 0;
         flex-direction: column;
-        height: 50vh;
-        align-items: center;
         padding: 0 20px;
     }
     .img-container-presentation{
@@ -465,9 +459,16 @@ html, body{
 
 
 /*soporte para pantallas horizontales*/
-@media (min-height:1000px) {
+@media (max-width: 1200px) and (orientation: landscape) {
     .presentation-container{
-        max-height: 50vh;
+        height: 70vh;
+    }
+    
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+    .presentation-container{
+        height: 100vh;
     }
     
 }
