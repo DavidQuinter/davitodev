@@ -15,7 +15,7 @@
     
 </head>
 <body>
-    <nav class="nav-container">
+    <nav class="nav-container" id="nav">
         <div class="header-mobile box-header">
             <div class="logo">
                 <p>DavitoDev</p>
@@ -24,33 +24,17 @@
                 <i id="icon-menu" class="fa-solid fa-bars fa-2xl"></i>
             </button>
         </div>
-        
-        <ul class="nav-list-container" id="menu">
-            <li class="nav-list-section">
-                <a href="#about_me"  class="nav-section" onclick="menuColapse()">About Me</a>
-            </li>
-            <li class="nav-list-section">
-                <a href="#My_projects" class="nav-section" onclick="menuColapse()">My Recent Work</a>
-            </li>
-            <li class="nav-list-section">
-                <a href="" class="nav-section" onclick="menuColapse()">Resume</a>
-            </li>
-            <li class="nav-list-section" onclick="menuColapse()">
-                <a href="/views/form-contact.html" class="nav-section">Contact</a>
-            </li>
-        </ul> 
-        
     </nav>
     <main>
        <section class="presentation-container">.
             <div class="elements-container">
                 <div class="title-container">
-                    <h1>DESING &</h1>
+                    <h1>DESIGN &</h1>
                     <h1>WEB DEVELOPMEN</h1>
                 </div>
                 <div class="description-container">
                     <p>
-                        Soy David Quintero, uno de los fundadores de DDR Tech Solutions, líder en soluciones tecnológicas. Me especializo en sistemas y desarrollo web, liderando proyectos desde el diseño y desarrollo de páginas web con Vue.JS, React, Node.js y Bootstrap, hasta la implementación de sistemas empresariales.
+                        I am David, a full stack web developer with a special focus on security. I offer comprehensive web development services and take pride in providing reliable and secure solutions. With extensive experience in protecting my clients' digital assets, my goal is to inspire trust and deliver exceptional results.
                     </p>
                 </div>
             </div>
@@ -66,8 +50,8 @@
                     <img src="public/img/responsive.jpg" alt="" class="card-img">
                 </div>
                 <div class="card-description-container">
-                    <h2 class="card-title">Diseño Web</h2>
-                    <p class="card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <h2 class="card-title">Web Design</h2>
+                    <p class="card-description">My web design service with Figma allows you to bring your ideas to life with precision and style. Using this powerful collaborative design tool, I create attractive and functional visual experiences for your website. From conceptualization to implementation, we will work together to ensure that your vision is reflected in every impactful detail. Trust me to provide you with an exceptional and captivating web design that stands out among the competition.</p>
                 </div>
         </article>
         <article class="description-tech-container">
@@ -75,7 +59,7 @@
                     <img src="public/img/code.png" alt="" class="card-img">
                 </div>
                 <div class="card-description-container">
-                    <h2 class="card-title">Desarrollo web</h2>
+                    <h2 class="card-title">Web development</h2>
                     <p class="card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                 </div>
         </article>
@@ -145,18 +129,8 @@
             </div>
         </div>
     </footer>
-    <script>
-        const toggleBtn = document.querySelector('#toggle_btn');
-        const iconMenu = document.querySelector('#icon-menu');
-        const menu = document.querySelector('#menu');
+    <script src="/main.js">
 
-        function menuColapse() {
-            menu.classList.toggle('active');
-            const isopen = menu.classList.contains('active');
-            iconMenu.classList = isopen
-            ? 'fa-solid fa-xmark fa-2xl'
-            : 'fa-solid fa-bars fa-2xl'
-        }
     </script>
 </body>
 </html>
