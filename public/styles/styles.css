@@ -51,7 +51,6 @@ html, body{
     border: none;
     color: #fff;
 }
-
 /*Presentacion*/
 .presentation-container{
     max-height: 100vh;
@@ -262,7 +261,7 @@ html, body{
 }
 .icon-social{
     text-decoration: none;
-    color: #08070D;
+    color: #fff;
 }
 /*Media Querys*/
 @media (max-width: 1023px) {
@@ -354,8 +353,14 @@ html, body{
         background-color: #08070D;
 
     }
-    .header-mobile{
+    .box-header{
         display: block;
+    }
+    .d-fix{
+        position: fixed;
+        width: 100%;
+        height: auto;
+        top: 0;
     }
     .logo{
         padding-left: 20px;

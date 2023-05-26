@@ -156,7 +156,7 @@ html, body{
     .input-g-style{
         border-bottom: 2px solid;
         padding: 1px 0;
-        font-size: .7rem;
+        font-size: .9rem;
     }
     .main-form{
     width: 100%;
@@ -170,8 +170,6 @@ html, body{
     }
     .input-s-styletxt{
         width: 100%;
-        resize: none;
-        overflow-y: scroll;
     }
     .container-form-structure{
         width: 100%;
