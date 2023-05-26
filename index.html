@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Davito.dev</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.css" integrity="sha512-W4KOSUNkQhX7JkalSiTkwAIoqsAvxDdgRc/WAa5U0R2TKTpHnNZuf9AiBk8InN4GCAMwer+O9fe4ThxIQFkOGQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/67f94f44a2.js" crossorigin="anonymous"></script>
     <link rel="preload" href="public/styles/styles.css" as="style">
     <link href="public/styles/styles.css" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-    
+    <link rel="preload" href="public/styles/form-styles.css" as="style">
+    <link href="public/styles/form-styles.css" rel="stylesheet"> 
+
 </head>
 <body>
     <nav class="nav-container" id="nav">
@@ -100,7 +101,7 @@
         </section>
         <br/>
         <section class="contact" id="contact">
-            <div class="contact-container">
+            <div class="contact-container contact-structure">
                 <div class="section-contact f-s-contact">
                     <p>Start a project</p>
                 </div>
@@ -108,11 +109,41 @@
                     <p>Interested in working together? We should queue up a time to chat. I will buy the coffee.</p>
                 </div>
                 <div class="section-contact t-s-contact">
-                    <a class="btn-s-contact" href="views/form-contact.html">
+                    <a class="btn-primary" href="">
                         let's do this
                     </a>
                 </div>
+                <div class="s-f-contact container-form-structure">
+                    <form action="" class="main-form form-structure ">
+                    <div class="name box-input">
+                        <label for="name" class="label-input">Name</label>
+                        <input type="text" id="name" class="input-s-style input-g-style" max="30" min="0">
+                    </div>
+                    <div class="Lname box-input">
+                        <label for="lastName" class="label-input">Last name</label>
+                        <input type="text" id="lastName" class="input-s-style input-g-style" max="30" min="0">
+                    </div>
+                    <div class="mail box-input">
+                    <label for="mail" class="label-input">email</label>
+                    <input type="email" id="mail" class="input-s-style input-g-style max="40" min="0"">
+                    </div>
+                    <div class="num box-input">
+                        <label for="number" class="label-input">phone number</label>
+                        <input type="tel" id="number" class="input-s-style input-g-style" max="15" min="0">
+                    </div>
+                    <div class="text box-input">
+                        <label for="consult" class="label-input">consult</label>
+                        <textarea name="" id="consult" class="input-s-styletxt input-g-style" max="250" min="0"></textarea>
+                    </div>
+                    <div class="btn-send">
+                        <button type="submit" class="btn-primary">Send</button>
+                    </div>
+                </form>
+                </div>
+                
             </div>
+            
+
         </section>
     </main>
     <footer class="footer-container">

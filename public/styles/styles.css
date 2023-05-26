@@ -9,7 +9,11 @@ html, body{
     font-family: 'Roboto Condensed', sans-serif;
     scroll-behavior: smooth;
 }
-
+::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 2px;
+    background-color: transparent;
+  }
 /*Estilos de barra de navegacion*/
 .nav-container{
     z-index: 990;
@@ -52,7 +56,10 @@ html, body{
 .presentation-container{
     max-height: 100vh;
     background-image: url(/public/img/BG.png);
-    background-size:cover ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     /*background: rgb(3,140,140);
     background: linear-gradient(346deg, rgba(3,140,140,1) 0%, rgba(1,52,64,1) 100%);
     */display: flex;
@@ -187,11 +194,16 @@ html, body{
     margin-top: 40px;
     margin-bottom: -90px;
 }
+.contact-structure{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    grid-template-areas: "p1 p2 p3"
+                         "form form form";
+}
 .contact-container{
-    display: flex;
     max-width: 80%;
-    justify-content: space-evenly;
-    align-items: center;
     padding: 35px;
     background-color: #08070D;
     color: #fff;
@@ -204,32 +216,76 @@ html, body{
     flex-grow:1;
 }
 .f-s-contact{
+    grid-area: p1;
     font-size: 25px;
     font-weight: 700;
 }
 .s-s-contact{
+    grid-area: p2;
     font-size: 18px;
     text-align: center;
 }
 .t-s-contact{
+    grid-area: p3;
     font-family: 'Pathway Gothic One', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
     font-weight: 400;
     color: #fff;
-
 }
-.btn-s-contact{
+.s-f-contact{
+    grid-area: form;
+    align-self: center;
+}
+.container-form-structure{
+    display: flex;
+    justify-content: center;
+}
+.form-structure{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    grid-template-areas: "name Lname"
+                         "mail num"
+                         "txt txt"
+                         "send send";
+}
+
+.name{
+    grid-area: name;
+}
+.Lname{
+    grid-area: Lname;
+}
+.mail{
+    grid-area: mail;
+}
+.num{
+    grid-area: num;
+}
+.text{
+    grid-area: txt;
+}
+.btn-send{
+    grid-area: send;
+    padding-top: 1rem;
+    justify-self: center;
+}
+.main-form{
+    padding-top: 3rem;
+}
+.btn-primary{
     color: #fff;
     text-decoration: none;
     padding: 10px 25px;
     width: auto;
     border-radius: 20px;  
     border-style: solid;  
-    background-color: transparent;
+    background-color: #08070D;
     border-color: #41B3BF;
     
 }
-.btn-s-contact:hover{
+.btn-primary:hover{
     color: #08070D;
     background-color: #41B3BF;
     font-weight: 700;

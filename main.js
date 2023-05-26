@@ -5,16 +5,16 @@ var navElements = {
             url: '#about_me'
         },
         {
-            title: 'My recent Work',
+            title: 'My recent work',
             url: '#My_projects'
         },
         {
-            title: 'About me',
+            title: 'Get my CV',
             url: 'get_CV'
         },
         {
             title: 'Contact',
-            url: '/views/form-contact.html'
+            url: '#contact'
         }
     ],
     render: function(){
