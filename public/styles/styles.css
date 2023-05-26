@@ -9,11 +9,6 @@ html, body{
     font-family: 'Roboto Condensed', sans-serif;
     scroll-behavior: smooth;
 }
-::-webkit-scrollbar {
-    width: 8px;
-    border-radius: 2px;
-    background-color: transparent;
-  }
 /*Estilos de barra de navegacion*/
 .nav-container{
     z-index: 990;
