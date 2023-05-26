@@ -55,3 +55,7 @@ var menuColapse = () => {
     : 'fa-solid fa-bars fa-2xl'
 }
 
+const noform = document.getElementById('buttonSend');
+var alertNoForm = () =>{
+    alert('This section is currently under construction, but feel free to reach out to me through my social media channels.')
+}
