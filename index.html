@@ -4,163 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Davito.dev</title>
+    <title>DavitoDev</title>
+    <link rel="icon" href="/public/assets/Logo/BN-5.svg">
     <script src="https://kit.fontawesome.com/67f94f44a2.js" crossorigin="anonymous"></script>
-    <link rel="preload" href="public/styles/styles.css" as="style">
-    <link href="public/styles/styles.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="Preload" href="/public/css/styles.css" as="stylesheet">
+    <link rel="stylesheet" href="/public/css/buttons.css">
+    <link rel="preload" href="/public/css/buttons.css" as="stylesheet">
+    <link rel="stylesheet" href="public/css/form-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="preload" href="public/styles/form-styles.css" as="style">
-    <link href="public/styles/form-styles.css" rel="stylesheet"> 
-
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Roboto+Condensed:wght@300;400;700&family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="/public/js/scrollreveal.js"></script>
 </head>
 <body>
-    <nav class="nav-container" id="nav">
-        <div class="header-mobile box-header" id="hmobile">
-            <div class="logo">
-                <p>DavitoDev</p>
+    <nav class="styles-nav-container nav-structure navBar" id="navBar">
+        <div class="nav-sections logo-section">
+            <div class="logo-container">
+                <img src="/public/assets/Logo/BN-5.svg" alt="DavitoDev" class="logo">
             </div>
-            <button class="button-toggle" type="button" id="toggle_btn" onclick="menuColapse()">
-                <i id="icon-menu" class="fa-solid fa-bars fa-2xl"></i>
-            </button>
+            <div class="btn-menu" id="btn-show" onclick="menuColapse()">
+                <i id="icon-menu" class="fa-sharp fa-solid fa-bars fa-xl"></i>
+            </div>
+        </div>
+        <div id="nav" class="nav-sections link-sections">
+
+        </div>
+        <div class="nav-sections contact-section">
+            <p class="mymail">davidquinterocentro@hotmail.com</p>        
         </div>
     </nav>
-    <main>
-       <section class="presentation-container">.
-            <div class="elements-container">
-                <div class="title-container">
-                    <h1>DESIGN &</h1>
-                    <h1>WEB DEVELOPMEN</h1>
-                </div>
-                <div class="description-container">
-                    <p>
-                        I am David, a full stack web developer with a special focus on security. I offer comprehensive web development services and take pride in providing reliable and secure solutions. With extensive experience in protecting my clients' digital assets, my goal is to inspire trust and deliver exceptional results.
-                    </p>
-                </div>
-            </div>
-            <div class="img-container-presentation"></div>
-       </section>
-       <br/>
-       <div class="about">
-            <h2 id="about_me">About me</h2>
-        </div>
-       <section class="tech-container">
-        <article class="description-tech-container">
-                <div class="img-card-container">
-                    <img src="public/img/responsive.jpg" alt="" class="card-img">
-                </div>
-                <div class="card-description-container">
-                    <h2 class="card-title">Web Design</h2>
-                    <p class="card-description">My web design service with Figma allows you to bring your ideas to life with precision and style. Using this powerful collaborative design tool, I create attractive and functional visual experiences for your website. From conceptualization to implementation, we will work together to ensure that your vision is reflected in every impactful detail. Trust me to provide you with an exceptional and captivating web design that stands out among the competition.</p>
-                </div>
-        </article>
-        <article class="description-tech-container">
-                <div class="img-card-container">
-                    <img src="public/img/code.png" alt="" class="card-img">
-                </div>
-                <div class="card-description-container">
-                    <h2 class="card-title">Web development</h2>
-                    <p class="card-description">Custom web development services using a wide range of tools and technologies. In the frontend, I utilize JavaScript, HTML, CSS, Bootstrap, React, and Vue to create attractive and functional interfaces. In the backend, I have experience with Node.js, SQL, NoSQL, MySQL, HeidiSQL, and Express.js to build a robust database and server logic. Additionally, as a DevOps expert, I leverage Azure to efficiently deploy and manage your web applications. Let me transform your ideas into a successful and captivating online presence.</p>
-                </div>
-        </article>
-        <article class="description-tech-container">
-                <div class="img-card-container">
-                    <img src="public/img/cibersecurity.jpg" alt="" class="card-img">
-                </div> 
-                <div class="card-description-container">
-                    <h2 class="card-title"> Cibersecurity</h2>   
-                    <p class="card-description">I offer specialized cybersecurity services to ensure comprehensive protection for your web applications and corporate data. Utilizing the latest techniques and tools, I assess and strengthen the security of your systems by identifying potential vulnerabilities and risks. I implement customized security solutions such as firewalls, data encryption, and robust authentication to prevent intrusions and safeguard your confidential information. Trust in my expertise in cybersecurity to keep your applications and businesses safe from cyber threats.</p>
-                </div>
-            </article>
-        </section>
-        <br/>
-        <div class="about">
-            <h2 id="My_projects" >My Recent Work</h2>
-        </div>
-
-        <section class="secion-proyects">
-            <div class="projects-container">
-                <article class="card-proyecto">
-                    <div class="img-container-proyecto">
-                        <img src="public/img//Frame 2.png" class="img-proyectos" alt="">
-                        <button class="button-link-proyecto"><a class="link-project" href="https://www.ddrtechsolutions.com" target="_blank">website under construction</a></button>
-                    </div>
-                    <div>
-                    </div>
-                </article>
-                <article class="card-proyecto">
-                    <div class="img-container-proyecto">
-                        <img src="public/img/Frame-astro.png" class="img-proyectos" alt="">
-                        <button class="button-link-proyecto"><a class="link-project" href="http://astrorecords.com/" target="_blank">Code or link</a></button>
-                    </div>
-                    <div>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <br/>
-        <br>
-        <br>
-        <section class="contact" id="contact">
-            <div class="contact-container contact-structure">
-                <div class="section-contact f-s-contact">
-                    <p>Start a project</p>
-                </div>
-                <div class="section-contact s-s-contact">
-                    <p>Interested in working together? We should queue up a time to chat. I will buy the coffee.</p>
-                </div>
-                <div class="s-f-contact container-form-structure">
-                    <form action="" class="main-form form-structure ">
-                    <div class="name box-input">
-                        <label for="name" class="label-input">Name</label>
-                        <input type="text" id="name" class="input-s-style input-g-style" max="30" min="0">
-                    </div>
-                    <div class="Lname box-input">
-                        <label for="lastName" class="label-input">Last name</label>
-                        <input type="text" id="lastName" class="input-s-style input-g-style" max="30" min="0">
-                    </div>
-                    <div class="mail box-input">
-                    <label for="mail" class="label-input">email</label>
-                    <input type="email" id="mail" class="input-s-style input-g-style max="40" min="0"">
-                    </div>
-                    <div class="num box-input">
-                        <label for="number" class="label-input">phone number</label>
-                        <input type="tel" id="number" class="input-s-style input-g-style" max="15" min="0">
-                    </div>
-                    <div class="text box-input">
-                        <label for="consult" class="label-input">consult</label>
-                        <textarea name="" id="consult" class="input-g-style input-s-styletxt" max="250" min="0"></textarea>
-                    </div>
-                    <div class="section-contact t-s-contact btn-send">
-                        <a class="btn-primary" href="" id="buttonSend" onclick="alertNoForm()">
-                            let's do this
-                        </a>
-                    </div>
-                </form>
+    <main class="styles-main-container main" id="main">
+        <section class="section-structure-1 home-styles" id="Home">
+            <article class="box-description">
+                <h1 class="title">DavitoDev</h1>
+                <h2 class="subtitle">Software Developer</h2>
+                <p class="description">I am David, a full stack web developer with a special focus on security. I offer comprehensive web development services and take pride in providing reliable and secure solutions. With extensive experience in protecting my clients' digital assets, my goal is to inspire trust and deliver exceptional results.</p>
+                <div class="say-hi">
+                    <button class="btn-primary btn-hi">
+                        say hi
+                    </button>
+                    <button class="btn-primary btn-hi">
+                        <a class="btn-get" download href="/public/assets/documents/CV_davidQuintero_2023.pdf">get my cv</a>
+                </button>
                 </div>
                 
+            </article>
+            <div class="lines-structure lines-position1"></div>
+            <div class="lines-structure lines-position2"></div>
+            <div class="lines-structure lines-position3"></div>
+
+            <article class="box-img">
+                
+                    <img src="/public/assets/img/me.webp" alt="" class="size1-img">
+                
+            </article>
+        </section>
+        <br>
+        <section class="section-structure-1 home-styles" id="About_me">
+            <article class="box-img about-box-img">
+                <img src="/public/assets/img/me.webp" alt="" class="size1-img">
+            </article>
+            <article id="tools" class="box-description about-box-description">
+                <h2 class="title-sections">web design and development</h2>
+                <p class="description-about">I am a passionate designer and developer with experience in a wide range of skills. My main focus is on designing user interfaces and user experiences for web and mobile applications.</p>
+                <br>
+            </article>
+        </section>
+        <section id="My_projects" class="projects-styles">
+                <h2 class="title-sections title-projects">My projects</h2>
+                <div class="slider">
+                    <div class="slider-container">
+                        <div class="slide">
+                            <div class="slide-section">
+                                <div class="project-description">
+                                    <p>Astro Records - Minimalist "Coming Soon" landing page. A simple yet effective page to generate anticipation and excitement around the launch of Astro Records. Developed using pure HTML and CSS.</p>
+                                    <div class="title-slider title-position"><h2 >Astro Records</h2></div>
+                                </div>
+                                <div class="img-slider-container">
+                                    <img class="img-slider" src="/public/assets/img/ASTRO RECORDS LOGO WHITE.png" alt="Imagen 1">
+                                </div>
+                            </div>
+                            <div class="slide-section">
+                                <div class="project-description">
+                                    <p>Astro Records - Minimalist "Coming Soon" landing page. A simple yet effective page to generate anticipation and excitement around the launch of Astro Records. Developed using pure HTML and CSS.</p>
+                                <div class="title-slider title-position"><h2>DDR tech solutions</h2></div>
+                                </div>
+                                <div class="img-slider-container">
+                                    <img class="img-slider" src="/public/assets/img/ASTRO RECORDS LOGO WHITE.png" alt="Imagen 1">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="contact-container contact-structure">
+            <div class="section-contact f-s-contact">
+                <p>Start a project</p>
+            </div>
+            <div class="section-contact s-s-contact">
+                <p>Interested in working together? We should queue up a time to chat. I will buy the coffee.</p>
+            </div>
+            <div class="s-f-contact container-form-structure">
+                <form action="" class="main-form form-structure ">
+                <div class="name box-input">
+                    <label for="name" class="label-input">Name</label>
+                    <input type="text" id="name" class="input-s-style input-g-style" max="30" min="0">
+                </div>
+                <div class="Lname box-input">
+                    <label for="lastName" class="label-input">Last name</label>
+                    <input type="text" id="lastName" class="input-s-style input-g-style" max="30" min="0">
+                </div>
+                <div class="mail box-input">
+                <label for="mail" class="label-input">email</label>
+                <input type="email" id="mail" class="input-s-style input-g-style max="40" min="0"">
+                </div>
+                <div class="num box-input">
+                    <label for="number" class="label-input">phone number</label>
+                    <input type="tel" id="number" class="input-s-style input-g-style" max="15" min="0">
+                </div>
+                <div class="text box-input">
+                    <label for="consult" class="label-input">consult</label>
+                    <textarea name="" id="consult" class="input-g-style input-s-styletxt" max="250" min="0"></textarea>
+                </div>
+                <div class="section-contact t-s-contact btn-send">
+                    <a class="btn-primary" href="" id="buttonSend" onclick="alertNoForm()">
+                        let's do this
+                    </a>
+                </div>
+                
+            </form>
+            </div>
+            <div class="social-section-container">
+                <h2>or</h2>
+                <div class="social-section">
+                    <a href="https://twitter.com/DavidChuck01" class="fa-brands fa-twitter fa-2xl icon-social" target="_blank"></a>
+                    <a href="https://wa.me/524463172285" class="fa-brands fa-whatsapp fa-2xl icon-social" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/dquintero28/" class="fa-brands fa-linkedin fa-2xl icon-social" target="_blank"></a>
+                    <a href="mailto:davidquinterocentro@hotmail.com" class="fa-solid fa-envelope fa-2xl icon-social" target="_blank"></a>
+                </div>
             </div>
             
-
-        </section>
-    </main>
-    <footer class="footer-container">
-        <div class="footer-flex">
-            <div class="text-footer">
-                <p>
-                    With a comprehensive approach to each project and solid experience, I offer customized solutions and exceptional results.</p>
-            </div>
-            <div class="social-section">
-                <a href="https://twitter.com/DavidChuck01" class="fa-brands fa-twitter fa-2xl icon-social" target="_blank"></a>
-                <a href="https://wa.me/524463172285" class="fa-brands fa-whatsapp fa-2xl icon-social" target="_blank"></a>
-                <a href="https://www.linkedin.com/in/dquintero28/" class="fa-brands fa-linkedin fa-2xl icon-social" target="_blank"></a>
-                <a href="mailto:davidquinterocentro@hotmail.com" class="fa-solid fa-envelope fa-2xl icon-social" target="_blank"></a>
-            </div>
+            
         </div>
-    </footer>
-    <script src="/main.js">
-
-    </script>
+    </section>
+    </main>
+    <script src="/public/js/animaciones.js"></script>
+    <script src="public/js/main.js"></script>
 </body>
 </html>

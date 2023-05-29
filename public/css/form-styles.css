@@ -1,16 +1,3 @@
-*{  
-    margin: 0%;
-}
-html, body{
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    font-family: 'Pathway Gothic One', sans-serif;
-    font-family: 'Roboto Condensed', sans-serif;
-    scroll-behavior: smooth;
-}
-/*input-styles*/
 .label-input{
     font-size: 1.5rem;
 }
@@ -25,12 +12,11 @@ html, body{
 }
 .input-g-style{
     border:none;
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid var(--withe-color);
     padding: 5px 0;
     font-size: 20px;
-    color: #fff;
+    color: var(--withe-color);
     background-color: transparent;
-    max-width: 100%;
 }
 .input-g-style:focus{
     outline: none;
@@ -40,13 +26,12 @@ html, body{
     width:auto;
 }
 .input-s-styletxt{
-    max-width: 100%;
     resize: none;
-    overflow-y: scroll;
 }
 .label-input{
     font-size: 18px;
     padding-bottom: 10px;
+    color: var(--withe-color);
 }
 
 .container-form-structure{
@@ -86,22 +71,7 @@ html, body{
 .main-form{
     padding-top: 3rem;
 }
-.btn-primary{
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 25px;
-    width: auto;
-    border-radius: 20px;  
-    border-style: solid;  
-    background-color: #08070D;
-    border-color: #41B3BF;
-    
-}
-.btn-primary:hover{
-    color: #08070D;
-    background-color: #41B3BF;
-    font-weight: 700;
-}
+
 
 @media (max-width: 900px){
     .label-input{
@@ -147,6 +117,9 @@ html, body{
     }
 }
 @media (max-width: 580px){
+    p{
+        font-size: 10px;
+    }
     .label-input{
         font-size: 0.9rem;
     }
@@ -156,7 +129,6 @@ html, body{
     .input-g-style{
         border-bottom: 2px solid;
         padding: 1px 0;
-        font-size: .9rem;
     }
     .main-form{
     width: 100%;
