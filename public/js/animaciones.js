@@ -21,6 +21,6 @@ window.sr = ScrollReveal({ mobile: true });
     });
     sr.reveal('.about',{
         duration: 3000,
-        origin: 'left',
+        origin: 'rigth',
         distance: '-150px'
     });
