@@ -431,6 +431,9 @@ p{
     .btn-hi{
         margin-top: 20px;
     }
+    .btn-get{
+        font-size: 15px;
+    }
     /*---------------------About me---------------------*/
     .about-box-img{
         height: 30vh;
@@ -467,6 +470,13 @@ p{
         flex-direction: column;
         gap: 20px;
     }
+    .title-position{
+        position: initial;
+    }
+    .project-description{
+        margin: 0;
+        padding: 0;
+    }
     .title-slider{
         height: 30px;
         width: 30vw;
@@ -500,6 +510,7 @@ p{
     .btn-hi{
         margin-top: 20px;
     }
+    
     .projects-styles{
         height: auto;
         gap: 20px;
