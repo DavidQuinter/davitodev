@@ -201,8 +201,15 @@ p{
     padding: 0;
     margin-bottom: 5vh;
 }
-
-
+.about-box-img{
+    height: 40rem;
+    width: 35rem;
+    overflow: hidden;
+}
+.img-about{
+    object-fit: cover;
+    object-position: center;
+}
 /*------------------projects--------------------*/
 .projects-styles{
     color: var(--withe-color);
