@@ -19,81 +19,88 @@
 </head>
 <body>
     <nav class="styles-nav-container nav-structure navBar" id="navBar">
-            <div class="nav-sections logo-section">
-                <div class="logo-container">
-                    <img src="/public/assets/Logo/BN-5.svg" alt="DavitoDev" class="logo">
-                </div>
-                <div class="btn-menu" id="btn-show" onclick="menuColapse()">
-                    <i id="icon-menu" class="fa-sharp fa-solid fa-bars fa-xl"></i>
-                </div>
+        <div class="nav-sections logo-section">
+            <div class="logo-container">
+                <img src="/public/assets/Logo/BN-5.svg" alt="DavitoDev" class="logo">
             </div>
-            <div id="nav" class="nav-sections link-sections">
+            <div class="btn-menu" id="btn-show" onclick="menuColapse()">
+                <i id="icon-menu" class="fa-sharp fa-solid fa-bars fa-xl"></i>
+            </div>
+        </div>
+        <div id="nav" class="nav-sections link-sections">
 
-            </div>
-            <div class="nav-sections contact-section">
-                <p class="mymail">davidquinterocentro@hotmail.com</p>        
-            </div>
+        </div>
+        <div class="nav-sections contact-section">
+            <p class="mymail">davidquinterocentro@hotmail.com</p>        
+        </div>
     </nav>
-    <main class="styles-main-container" id="main">
-        <section class="section-structure-1 home-styles home" id="Home">
+    <main id="main" class="styles-main-container">
+        <section class="home" id="Home">
             <article class="box-description">
                 <h1 class="title">DavitoDev</h1>
                 <h2 class="subtitle">Software Developer</h2>
                 <p class="description">I am David, a full stack web developer with a special focus on security. I offer comprehensive web development services and take pride in providing reliable and secure solutions. With extensive experience in protecting my clients' digital assets, my goal is to inspire trust and deliver exceptional results.</p>
-                <div class="say-hi">
-                    <button class="btn-primary btn-hi">
-                        <a class="btn-get" href="mailto:davidquinterocentro@hotmail.com">say hi</a>
-                    </button>
-                    <button class="btn-primary btn-hi">
-                        <a class="btn-get" download href="/public/assets/documents/CV_davidQuintero_2023.pdf">get my cv</a>
-                </button>
-                </div>                
+                <a class="btn-primary btn-hi" href="mailto:davidquinterocentro@hotmail.com">say hi</a>
             </article>
             <article class="box-img">
-                
-                    <img src="/public/assets/img/me.webp" alt="" class="size1-img">
-                
+                <img src="/public/assets/img/vista-superior-escritorio-cafe-paleta-colores.webp" alt="" class="img-home">
             </article>
         </section>
         <br>
-        <section class="section-structure-1 home-styles about" id="About_me">
-            <article class="box-img about-box-img">
-                <img class="img-about" src="/public/assets/img/cerrar-hombre-escribiendo-codigo-computadora-portatil.png" alt="" class="size1-img">
-            </article>
-            <article id="tools" class="box-description about-box-description">
-                <h2 class="title-sections">web design and development</h2>
-                <p class="description-about">I am a passionate designer and developer with experience in a wide range of skills. My main focus is on designing user interfaces and user experiences for web and mobile applications.</p>
+        <section class="about structure-about" id="About_me">
+            <article id="description-about" class="position box-description">
+                <h1 class="title">About me</h1>
+                <p class="description">I am a passionate designer and developer with experience in a wide range of skills. My main focus is on designing user interfaces and user experiences for web and mobile applications.</p>
                 <br>
+            </article>
+            <article class="tools-container">
+                <img src="/public/assets/Logo/logos tools/html-5.svg" alt="" class="logo-tools">
+                <img src="/public/assets/Logo/logos tools/css-3.svg" alt="" class="logo-tools">
+                <img src="/public/assets/Logo/logos tools/javascript.svg" alt="" class="logo-tools">
+                <img src="/public/assets/Logo/logos tools/react.svg" alt="" class="logo-tools">
+                <img src="/public/assets/Logo/logos tools/vue.svg" alt="" class="logo-tools">
+                <img src="/public/assets/Logo/logos tools/tailwindcss-icon.svg" alt="" class="logo-tools">
+                <img src="/public/assets/Logo/logos tools/dotnet.svg" alt="" class="logo-tools">
+                <img src="/public/assets/Logo/logos tools/mysql.svg" alt="" class="logo-tools">
+                <img src="/public/assets/Logo/logos tools/git-icon.svg" alt="" class="logo-tools">
+                <img src="/public/assets/Logo/logos tools/microsoft-azure.svg" alt="" class="logo-tools">
+                <img src="/public/assets/Logo/logos tools/nodejs.svg" alt="" class="logo-tools">
+                <img src="/public/assets/Logo/logos tools/figma.svg" alt="" class="logo-tools">
+                <img src="/public/assets/Logo/logos tools/adobe-photoshop.svg" alt="" class="logo-tools"> 
             </article>
         </section>
         <section id="My_projects" class="projects-styles projects">
-                <h2 class="title-sections title-projects">My projects</h2>
-                <div class="slider">
-                    <div class="slider-container">
-                        <div class="slide">
-                            <div class="slide-section">
-                                <div class="project-description">
-                                    <p>Minimalist "Coming Soon" landing page. A simple yet effective page to generate anticipation and excitement around the launch of Astro Records. Developed using pure HTML and CSS.</p>
-                                    <div class="title-slider title-position"><h2 >Astro Records</h2></div>
-                                </div>
-                                <div class="img-slider-container">
-                                    <img class="img-slider" src="/public/assets/img/ASTRO RECORDS LOGO WHITE.png" alt="Imagen 1">
-                                </div>
-                            </div>
-                            <div class="slide-section">
-                                <div class="project-description">
-                                    <p>Ongoing development of an appealing website showcasing DDR Tech Solutions' services to the public. Highlighting the company's expertise and professionalism, the landing page will provide clear information about the services offered. Enhancing DDR Tech Solutions' online presence and fostering connection with the target audience.</p>
-                                <div class="title-slider title-position"><h2>DDR tech solutions</h2></div>
-                                </div>
-                                <div class="img-slider-container">
-                                    <img class="img-slider" src="/public/assets/img/DDR.png" alt="Imagen 1">
-                                </div>
-                            </div>
-                            
+            <article class="box-description description-projects">
+                <h1 class="title">My projects</h1>
+                <p class="description">Welcome to our projects section, where we showcase outstanding examples of our work. We take pride in collaborating with our clients to create exceptional digital solutions. From web design to app development, each project is an expression of our dedication to quality and customer satisfaction. Explore our portfolio and discover how we can help you achieve your online goals."</p>
+            </article>
+            <article  class="cards">
+                <div id="projects" class="cards-container">
+                </div>
+                <!-- <div class="cards-container">
+                    <div class="card" style="background-color: rgb(242, 121, 166);">
+                        <div class="card-img-container">
+                            <img src="/public/assets/img/ASTRO RECORDS LOGO WHITE.png" class="logo-project">
+                        </div>
+                        <div class="card-description">
+                            <h2>Astro Records</h2>
+                            <p>Minimalist "Coming Soon" landing page. A simple yet effective page to generate anticipation and excitement around the launch of Astro Records. Developed using pure HTML and CSS.</p>
+                            <a href="http://astrorecords.com" class="button-secondary"></a>
                         </div>
                     </div>
-                </div>
-    </section>
+                    <div class="card" style="background-color: rgb(52, 112, 191);">
+                        <div class="card-img-container">
+                            <img src="/public/assets/img/DDR.png" class="logo-project">
+                        </div>
+                        <div class="card-description">
+                            <h2>DDR tech solutions</h2>
+                            <p></p>
+                            <a href="http://ddrtechsolutions.com/" class="button-secondary"></a>
+                        </div>
+                    </div>
+                </div> -->
+            </article>              
+        </section>
     <section class="contact" id="contact">
         <div class="contact-container contact-structure">
             <div class="section-contact f-s-contact">
@@ -132,21 +139,23 @@
                 
             </form>
             </div>
-            <div class="social-section-container">
-                <h2>or</h2>
-                <div class="social-section">
-                    <a href="https://twitter.com/DavidChuck01" class="fa-brands fa-twitter fa-2xl icon-social" target="_blank"></a>
-                    <a href="https://wa.me/524463172285" class="fa-brands fa-whatsapp fa-2xl icon-social" target="_blank"></a>
-                    <a href="https://www.linkedin.com/in/dquintero28/" class="fa-brands fa-linkedin fa-2xl icon-social" target="_blank"></a>
-                    <a href="mailto:davidquinterocentro@hotmail.com" class="fa-solid fa-envelope fa-2xl icon-social" target="_blank"></a>
-                </div>
-            </div>
-            
-            
         </div>
     </section>
+    <section class="social-section-container social">
+        <div class="logo-container">
+            <img src="/public/assets/Logo/BN-1.svg" alt="" class="logo">
+        </div>
+        <p>DavitoDev</p>
+        <div class="line"></div>
+        <div class="social-section">
+            <a href="https://twitter.com/DavidChuck01" class="fa-brands fa-twitter fa-2xl icon-social" target="_blank"></a>
+            <a href="https://wa.me/524463172285" class="fa-brands fa-whatsapp fa-2xl icon-social" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/dquintero28/" class="fa-brands fa-linkedin fa-2xl icon-social" target="_blank"></a>
+            <a href="mailto:davidquinterocentro@hotmail.com" class="fa-solid fa-envelope fa-2xl icon-social" target="_blank"></a>
+        </div>
+</section>
     </main>
-    <script src="/public/js/animaciones.js"></script>
     <script src="public/js/main.js"></script>
+    <script src="/public/js/animaciones.js"></script>
 </body>
 </html>

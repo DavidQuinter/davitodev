@@ -57,80 +57,95 @@ var menuColapse = () => {
     : 'fa-sharp fa-solid fa-bars fa-2xl'
 }
 
-/////////////////////////////////////////////
-var servicesElements = {
-    services : [
-        {
-            listA :{
-                titleA: 'Things I design:',
-                elementsA: ['UI', 'UX', 'Web', 'Apps'],
-            },
-            listB:{
-                titleB: 'Design Tools:',
-                elementsB: ['figma', 'photoshop']
-            }
-        },
-        {
-            listA :{
-                titleA: 'Languages I speak:',
-                elementsA: ['HTML', 'CSS', 'JS', 'SCSS', 'JSON', 'PERL', 'SQL'],
-            },
-            listB:{
-                titleB: 'Dev Tools:',
-                elementsB: ['Terminal', 'Github', 'Bootstrap', 'SASS', 'Vue', 'React', 'Node', 'Express.js', 'Azure']
-            }
-        }
-    ],
-    render: function(){
-        var toolsContainer = document.createElement('div');
-        toolsContainer.classList.add('tools-structure', 'tools-styles')
-        this.services.forEach(service => { 
-            var listContainerA = document.createElement('div');
-            var listContainerB = document.createElement('div');
-            listContainerA.classList.add('styles-toolA')
-            listContainerB.classList.add('styles-toolB')
+////////////////////////////////////////////
 
-            var h3ElementA = document.createElement('h3');
-            
-            h3ElementA.textContent = service.listA.titleA;
-            listContainerA.appendChild(h3ElementA);
-            var h2ElementB = document.createElement('h3');
-            
-            h2ElementB.textContent = service.listB.titleB;
-            listContainerB.appendChild(h2ElementB);
-            var ultoolA = document.createElement('div');
-            var ultoolB = document.createElement('ul');
 
-            ultoolA.classList.add('ul-styles');
-            ultoolB.classList.add('ul-styles');
-
-            var list1 = service.listA.elementsA;
-            var list2 = service.listB.elementsB;
-
-            var litool = document.createElement('p');
-            litool.classList.add('li-styles')
-            litool.textContent = list1
-            ultoolA.appendChild(litool)
-            
-
-            list2.forEach(subServiceB=>{
-                var litoolB = document.createElement('li');
-                litoolB.classList.add('li-styles')
-                litoolB.textContent = subServiceB;
-                ultoolB.appendChild(litoolB)
-
-            })
-            listContainerA.appendChild(ultoolA);
-            listContainerB.appendChild(ultoolB)
-            listContainerA.appendChild(listContainerB)
-            toolsContainer.appendChild(listContainerA)
-            
-        }) 
-        
-        document.getElementById('tools').appendChild(toolsContainer);
+class CardRenderer {
+    constructor(services) {
+      this.services = services;
+      this.colors = ['#F279A6', '#3470BF', '#38A673', '#D9AF32', '#F2522E', '#fff', '#000'];
     }
-}
-servicesElements.render();
+      
+        createCardElement(service, color) {
+          const cardElement = document.createElement('div');
+          cardElement.classList.add('card', 'card-structure', 'dynamic-card');
+          cardElement.style.backgroundColor = color;
+      
+          const imgBox = document.createElement('div');
+          imgBox.classList.add('card-img-container');
+      
+          const imgElement = document.createElement('img');
+          imgElement.setAttribute('src', service.logo);
+          imgElement.classList.add('logo-project');
+      
+          const descriptionElement = document.createElement('div');
+          descriptionElement.classList.add('card-description');
+      
+          const titleElement = document.createElement('h2');
+          titleElement.textContent = service.title;
+      
+          const descriptionTextElement = document.createElement('p');
+          descriptionTextElement.textContent = service.description;
+      
+          const linkElement = document.createElement('a');
+          linkElement.setAttribute('href', service.link);
+          linkElement.classList.add('btn-secondary');
+          linkElement.textContent = service.go;
+      
+          cardElement.appendChild(imgBox);
+          imgBox.appendChild(imgElement);
+          cardElement.appendChild(descriptionElement);
+          descriptionElement.appendChild(titleElement);
+          descriptionElement.appendChild(descriptionTextElement);
+          descriptionElement.appendChild(linkElement);
+            
+          return cardElement;
+        }
+      
+        render() {
+          const fragment = document.createDocumentFragment();
+          const projectsElement = document.getElementById('projects');
+      
+          this.services.forEach((service, index) => {
+            const colorIndex = index % this.colors.length;
+            const color = this.colors[colorIndex];
+            const cardElement = this.createCardElement(service, color);
+            fragment.appendChild(cardElement);
+          });
+      
+          projectsElement.innerHTML = '';
+          projectsElement.appendChild(fragment);
+        }
+      }
+      
+      const projectsElements = {
+        services: [
+          {
+            title: 'Astro Records',
+            description:
+              'Minimalist "Coming Soon" landing page. A simple yet effective page to generate anticipation and excitement around the launch of Astro Records. Developed using pure HTML and CSS.',
+            link: 'http://astrorecords.com',
+            logo: '/public/assets/img/ASTRO RECORDS LOGO WHITE.png',
+            go:'Astrorecords.com'
+          },
+          {
+            title: 'DDR tech solutions',
+            description: '',
+            link: 'http://ddrtechsolutions.com/',
+            logo: '/public/assets/img/DDR.png',
+            go:'ddrtechsolutions.com'
+          },
+        ],
+      };
+      
+      const cardRenderer = new CardRenderer(projectsElements.services);
+      cardRenderer.render();
+      
+  
+
+////////////////////////////////////////////
+
+
 const noform = document.getElementById('buttonSend');
 var alertNoForm = () =>{
     alert('This section is currently under construction, but feel free to reach out to me through my social media channels.')
