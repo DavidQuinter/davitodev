@@ -37,8 +37,10 @@
 .container-form-structure{
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 .form-structure{
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -67,6 +69,7 @@
 .btn-send{
     grid-area: send;
     padding-top: 15px;
+    height: fit-content;
 }
 .main-form{
     padding-top: 3rem;
@@ -75,7 +78,7 @@
 
 @media (max-width: 900px){
     .label-input{
-        font-size: 1rem;
+        font-size: 15px;
     }
     .box-input{
         padding: 5px 10px;
@@ -86,42 +89,16 @@
         font-size: 1rem;
     }
     .main-form{
-    width: 500px;
     height: 50vh;
     padding-top: 20px;
     }
 }
-@media (max-width: 767px){
-    .label-input{
-        font-size: 0.9rem;
-    }
-    .box-input{
-        padding: 5px 10px;
-    }
-    .input-g-style{
-        border-bottom: 2px solid;
-        padding: 3px 0;
-        font-size: .9rem;
-    }
-    .main-form{
-    max-width: 500px;
-    height: 50vh;
-    }
-    .input-g-style{
-        width: 80%;
-    }
-    .input-s-styletxt{
-        width: 90%;
-        resize: none;
-        overflow-y: scroll;
-    }
-}
 @media (max-width: 580px){
     p{
-        font-size: 10px;
+        font-size: 15px;
     }
     .label-input{
-        font-size: 0.9rem;
+        font-size: 15px;
     }
     .box-input{
         padding: 5px 10px;
@@ -139,6 +116,7 @@
     }
     .input-g-style{
         width: 100%;
+        font-size: 20px;
     }
     .input-s-styletxt{
         width: 100%;

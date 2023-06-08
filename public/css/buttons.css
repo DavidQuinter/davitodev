@@ -10,7 +10,7 @@ html{
     color: #fff;
     text-decoration: none;
     padding: 1.5vh 2.5vw;
-    width: auto; 
+    width:fit-content ; 
     border: none;
     border-bottom: solid .2vw;
     border-right: solid .2vw;  
@@ -25,4 +25,21 @@ html{
     transition: var(--salida);
     color: #08070D;
     background-color: var(--withe-color);
+}
+.btn-secondary{
+    color: #08070D;
+    text-decoration: none;
+    width: 100%;
+    padding-top: 20px;
+}
+
+@media (max-width: 900px){
+    .btn-primary{
+        font-size: 15px;
+        padding: 1rem;
+        font-weight: 400;
+    }
+    .btn-primary:hover{
+        font-weight: 700;
+    }
 }
